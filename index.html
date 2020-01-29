@@ -12,6 +12,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+		<script>
+				function myPopup(myURL, title, myWidth, myHeight) {
+            var left = (screen.width - myWidth) / 2;
+            var top = (screen.height - myHeight) / 4;
+            var myWindow = window.open(myURL, title, 'url=no, title=no, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + myWidth + ', height=' + myHeight + ', top=' + top + ', left=' + left);
+         }
+		</script>
 
 		<!-- Header -->
 			<section id="header">
@@ -32,6 +39,8 @@
 						<li><a href="https://www.linkedin.com/in/jose-casorla/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 						<li><a href="https://github.com/jcasorla" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.slideshare.net/JoseCasorla1/josecasorlaresume" target="_blank" class="icon brands fa-slideshare"><span class="label">Resume</span></a></li>
+						<!-- <li><a href="#" onClick="MyWindow=window.open('http://www.google.com','MyWindow','width=600,height=300'); return false;" target="_blank" class="icon solid fa-envelope"><span class="label">Mail</span></a></li> -->
+						<li><a href="mailto:jose.casorla@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -87,7 +96,7 @@
 									<div class="features">
 										
 										<article>
-											<a href="http://ec2-54-185-11-156.us-west-2.compute.amazonaws.com/login" class="image" target="_blank"><img src="images/tiriDoctor.jpg" alt="tiriDoctor" /></a>
+											<a href="#" onClick="myPopup('tiriDoctor.html', 'web', 780, 400);" target="_blank" class="image" target="_blank"><img src="images/tiriDoctor.jpg" alt="tiriDoctor" /></a>
 											
 											<div class="inner">
 												<h4>tiriDoctor</h4>
